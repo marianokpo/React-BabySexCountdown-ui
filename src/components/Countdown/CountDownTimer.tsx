@@ -111,15 +111,15 @@ const CountDownTimer = ({
         justifyContent="center"
         spacing={2}
       >
-        <CountDownCard label="days" number={days} cardRef={DaysCardRef} />
-        <CountDownCard label="hours" number={hours} cardRef={HoursCardRef} />
+        <CountDownCard label="Dias" number={days} cardRef={DaysCardRef} />
+        <CountDownCard label="Horas" number={hours} cardRef={HoursCardRef} />
         <CountDownCard
-          label="minutes"
+          label="Minutos"
           number={minutes}
           cardRef={MinutesCardRef}
         />
         <CountDownCard
-          label="seconds"
+          label="Segundos"
           number={seconds}
           cardRef={SecondsCardRef}
         />

@@ -23,7 +23,7 @@ code {
 }
 
 .countdown__container .countdown__card {
-  width: 20%;
+  width: 30%;
 }
 
 .countdown__container .countdown__card .countdown__card__bg {
@@ -77,7 +77,7 @@ code {
   place-content: center;
   place-items: center;
   font-size: 8vw;
-  color: #fb6087;
+  color: #1dc926;
 }
 
 .countdown__container
@@ -99,86 +99,13 @@ code {
   padding-top: 1.5rem;
   text-transform: uppercase;
   font-size: 1.5vw;
+  font-weight: bold;
   letter-spacing: 5px;
-  color: #8486a9;
+  color: #151416;
+  text-align: center;
 }
 
 .rotate {
   -webkit-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
-
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 10rem;
-}
-
-.social-links .icon {
-  list-style: none;
-}
-
-.social-links .icon:hover svg path {
-  fill: #fb6087;
-}
-
-.social-links .icon svg path {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.attribution {
-  text-align: center;
-  padding: 2rem;
-}
-
-.attribution a {
-  color: #8486a9;
-  letter-spacing: 1px;
-}
-
-.app-container {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.container {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-}
-
-.container main {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-width: 350px;
-  width: 75%;
-  max-width: 1100px;
-  height: auto;
-  margin: 0 auto 0;
-  text-align: center;
-  padding: 6rem 0 0;
-}
-
-.container main h2 {
-  text-align: center;
-  font-size: calc(0.75rem + 1vw);
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  padding-bottom: 4rem;
-}
-/*# sourceMappingURL=app.css.map */
