@@ -85,19 +85,19 @@ const CountDownTimer = ({
         SecondsCardRef.current.classList.toggle("rotate");
       }, 1000);
     }
-    if (seconds === 0 && minutes > 0) {
+    if (seconds === 59 && minutes > 0) {
       MinutesCardRef.current.classList.toggle("rotate");
     }
   }, [seconds, minutes]);
 
   useEffect(() => {
-    if (minutes === 0 && hours > 0) {
+    if (minutes === 59 && hours > 0) {
       HoursCardRef.current.classList.toggle("rotate");
     }
   }, [minutes, hours]);
 
   useEffect(() => {
-    if (hours === 0) {
+    if (hours === 59) {
       DaysCardRef.current.classList.toggle("rotate");
     }
   }, [hours, days]);

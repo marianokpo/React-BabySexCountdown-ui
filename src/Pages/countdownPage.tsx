@@ -1,9 +1,9 @@
 import { Grid, Typography, CardMedia } from "@mui/material";
 import CountDownTimer from "components/Countdown/CountDownTimer";
 import React from "react";
-import imageBackground from "../contents/images/fondo-inconsútil-del-modelo-de-los-bebés.jpg";
-import imageHombre from "../contents/images/hombre.jpg";
-import imageMujer from "../contents/images/mujer.jpg";
+import imageBackground from "../contents/images/fondo-inconsútil-del-modelo-de-los-bebés.png";
+import imageHombre from "../contents/images/hombre.png";
+import imageMujer from "../contents/images/mujer.png";
 
 type Props = {
   onEvent?: () => void;
@@ -21,6 +21,7 @@ export default function countdownPage({ onEvent = () => {} }: Props) {
         height: "100vh",
         maxWidth: "100vw",
         maxHeight: "100vh",
+        backgroundColor: "#FAFAFA",
         backgroundImage: `url(${imageBackground})`,
       }}
     >
