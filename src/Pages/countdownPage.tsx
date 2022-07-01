@@ -1,7 +1,6 @@
 import { Grid, Typography, CardMedia } from "@mui/material";
 import CountDownTimer from "components/Countdown/CountDownTimer";
 import React from "react";
-import imageBackground from "../contents/images/fondo-inconsútil-del-modelo-de-los-bebés.png";
 import imageHombre from "../contents/images/hombre.png";
 import imageMujer from "../contents/images/mujer.png";
 
@@ -10,21 +9,10 @@ type Props = {
 };
 
 export default function countdownPage({ onEvent = () => {} }: Props) {
-  const DateBeby: Date = new Date("2022-07-01T22:00:00");
+  const DateBeby: Date = new Date("2022-07-01T19:00:00");
 
   return (
-    <Grid
-      container
-      justifyContent="center"
-      style={{
-        width: "100vw",
-        height: "100vh",
-        maxWidth: "100vw",
-        maxHeight: "100vh",
-        backgroundColor: "#FAFAFA",
-        backgroundImage: `url(${imageBackground})`,
-      }}
-    >
+    <>
       <Grid container justifyContent="center" alignContent="center" xs={12}>
         <Typography
           variant="h2"
@@ -34,13 +22,14 @@ export default function countdownPage({ onEvent = () => {} }: Props) {
             fontWeight: "bold",
             color: "#1dc926",
             textShadow: "2px 2px #000000",
+            textAlign: "center",
           }}
         >
           Esperando saber el sexo del Beby.
         </Typography>
       </Grid>
       <Grid container justifyContent="center" xs={12} style={{ height: "70%" }}>
-        <Grid container justifyContent="center" xs={4}>
+        <Grid container justifyContent="center" sm={4} xs={12}>
           {
             <img
               src={imageHombre}
@@ -49,15 +38,21 @@ export default function countdownPage({ onEvent = () => {} }: Props) {
                 display: "block",
                 marginLeft: "auto",
                 marginRight: "auto",
-                width: "50%",
+                width: "40%",
               }}
             />
           }
         </Grid>
-        <Grid container justifyContent="center" alignContent="center" xs={4}>
+        <Grid
+          container
+          justifyContent="center"
+          alignContent="center"
+          sm={4}
+          xs={12}
+        >
           <CountDownTimer endDate={DateBeby} onTimeout={onEvent} />
         </Grid>
-        <Grid container justifyContent="center" xs={4}>
+        <Grid container justifyContent="center" sm={4} xs={12}>
           {
             <img
               src={imageMujer}
@@ -66,12 +61,12 @@ export default function countdownPage({ onEvent = () => {} }: Props) {
                 display: "block",
                 marginLeft: "auto",
                 marginRight: "auto",
-                width: "50%",
+                width: "40%",
               }}
             />
           }
         </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 }
