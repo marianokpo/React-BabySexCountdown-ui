@@ -25,7 +25,7 @@ export default function countdownPage({ onEvent = () => {} }: Props) {
             textAlign: "center",
           }}
         >
-          Esperando saber el sexo del Beby.
+          Esperando saber el sexo del bebe.
         </Typography>
       </Grid>
       <Grid container justifyContent="center" xs={12} style={{ height: "70%" }}>
